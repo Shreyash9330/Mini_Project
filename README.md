@@ -4,7 +4,6 @@ This is a **console-based Student Management System** built using **Java**, **JD
 It allows users to manage student data such as **Add, Display, Update, Delete** through a menu-driven program.
 
 ---
-
 ## 📌 Features
 
 ✔ Add new student  
@@ -15,7 +14,6 @@ It allows users to manage student data such as **Add, Display, Update, Delete** 
 ✔ Clean MVC folder structure  
 
 ---
-
 ## 🗂 Project File Structure
 
 Mini_Project/
@@ -27,9 +25,7 @@ Mini_Project/
 └── StudMain.java          # Main runner class
 
 ---
-
 ## 🔧 Requirements
-
 - Java JDK 8+  
 - MySQL Database  
 - JDBC Connector JAR  
