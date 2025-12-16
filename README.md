@@ -17,12 +17,12 @@ It allows users to manage student data such as **Add, Display, Update, Delete** 
 ## 🗂 Project File Structure
 
 Mini_Project/
-├── MyConnection.java <br>     # Database connection file
-├── Student.java           # Model Class
-├── StudModel.java         # Handles CRUD operations
-├── StudView.java          # User Input & Output
-├── StudController.java    # Connects Model & View
-└── StudMain.java          # Main runner class
+├── MyConnection.java      # Database connection file <br>
+├── Student.java           # Model Class <br>
+├── StudModel.java         # Handles CRUD operations <br>
+├── StudView.java          # User Input & Output <br>
+├── StudController.java    # Connects Model & View <br>
+└── StudMain.java          # Main runner class <br>
 
 ---
 ## 🔧 Requirements
