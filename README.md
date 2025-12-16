@@ -16,7 +16,7 @@ It allows users to manage student data such as **Add, Display, Update, Delete** 
 ---
 ## 🗂 Project File Structure
 
-Mini_Project/
+Mini_Project/ <br>
 ├── MyConnection.java      # Database connection file <br>
 ├── Student.java           # Model Class <br>
 ├── StudModel.java         # Handles CRUD operations <br>
