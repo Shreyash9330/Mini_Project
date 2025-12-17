@@ -38,7 +38,6 @@ public void updateStudent(Student s)
 			pst.executeUpdate();
 			mycon.con.close();
 			JOptionPane.showMessageDialog(null,"RECORD UPDATED");
-			
 		}
 		catch(Exception ex) {}
 		
@@ -54,8 +53,6 @@ public void deleteStudent(Student s)
 			pst.executeUpdate();
 			mycon.con.close();
 			JOptionPane.showMessageDialog(null,"RECORD DELETED");
-			
-			
 		}
 		catch(Exception ex) 
 		{
@@ -86,5 +83,6 @@ public void searchStudent(Student s)
 			System.out.println(ex);
 		}
 }
+
 
 
