@@ -1,9 +1,9 @@
 package miniProject;
 import java.awt.FlowLayout;
 import java.sql.*;
-
 import javax.swing.*;
 import javax.swing.JFrame;
+
 class StudView  extends JFrame
 {
 	JLabel l1,l2,l3;
@@ -38,7 +38,9 @@ class StudView  extends JFrame
 		setVisible(true);
 		setSize(400,400);
 	}
+	
 }
+
 
 
 
