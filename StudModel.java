@@ -4,12 +4,12 @@ import java.sql.*;
 import javax.swing.*;
 import javax.swing.JOptionPane;
 public class StudModel {
-
-	public MyConnection mycon;
+public MyConnection mycon;
 	
-	public void addStudent(Student s)
+public void addStudent(Student s)
+{
+	try 
 	{
-		try {
 			 mycon = new MyConnection();
 			 PreparedStatement pst =mycon.con.prepareStatement("insert into student  values(?,?,?)");
 			 pst.setInt(1,s.getRno());
@@ -19,16 +19,16 @@ public class StudModel {
 			  JOptionPane.showMessageDialog(null,"Record Saved");
 			 mycon.con.close();
 			
-		}
-		catch(Exception ex)
-		{
-			System.out.print(ex);
-		}
 	}
-	
-	public void updateStudent(Student s)
+	catch(Exception ex)
 	{
-		try
+			System.out.print(ex);
+	}
+}
+	
+public void updateStudent(Student s)
+{
+	try
 		{
 			mycon=new MyConnection();
 			PreparedStatement pst=mycon.con.prepareStatement("update student set name=?,city=? where rno=?");
@@ -42,11 +42,11 @@ public class StudModel {
 		}
 		catch(Exception ex) {}
 		
-	}
+}
 	
-	public void deleteStudent(Student s)
-	{
-		try
+public void deleteStudent(Student s)
+{
+	try
 		{
 			mycon=new MyConnection();
 			PreparedStatement pst=mycon.con.prepareStatement("delete from student where rno=?");
@@ -57,11 +57,14 @@ public class StudModel {
 			
 			
 		}
-		catch(Exception ex) {}
-	}
+		catch(Exception ex) 
+		{
+			System.out.println(ex);
+		}
+}
 	
-	public void searchStudent(Student s)
-	{
+public void searchStudent(Student s)
+{
 		try
 		{
 			mycon=new MyConnection();
@@ -78,7 +81,10 @@ public class StudModel {
 			
 			mycon.con.close();
 		}
-		catch(Exception ex) {}
-	}
-
+		catch(Exception ex) 
+		{
+			System.out.println(ex);
+		}
 }
+
+
