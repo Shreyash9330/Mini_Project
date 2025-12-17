@@ -1,15 +1,11 @@
 package miniProject;
 
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JOptionPane;
 
-
-
-public class StudController implements ActionListener{
-
+public class StudController implements ActionListener
+{
 	public StudView v;
 	public Student s1;
 	public StudModel m ;
@@ -59,4 +55,5 @@ public class StudController implements ActionListener{
 		}
 	}
 }
+
 
