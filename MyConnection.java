@@ -1,8 +1,9 @@
 package miniProject;
 import java.sql.*;
+
 public class MyConnection {
 	
-		public Connection con;
+	public Connection con;
 	MyConnection()
 	{
 			try 
@@ -17,5 +18,6 @@ public class MyConnection {
 	}
 
 }
+
 
 
